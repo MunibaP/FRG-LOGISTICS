@@ -1,5 +1,7 @@
+// Import the Quote model
 const Quote = require('../models/Quote');
 
+// Seed function to insert sample quote requests into the database
 async function seedQuote() {
   await Quote.create([
     {
@@ -20,8 +22,10 @@ async function seedQuote() {
     },
   ]);
 
+  // Log success message when seeding is complete
   console.log('✅ Quotes seeded');
  
 };
 
+// Export the seeding function to be called externally
 module.exports = seedQuote;
