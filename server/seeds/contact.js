@@ -1,6 +1,7 @@
-// seeds for contact page
+// Import the Contact model
 const Contact = require('../models/Contact');
 
+// Seed function to insert sample contact form entries into the database
 async function seedContact() {
   await Contact.create([
     {
@@ -16,7 +17,9 @@ async function seedContact() {
       "message": "Hi, I'm looking for a recurring delivery solution for my business in the GTA. Please get in touch!"
     },
   ]);
+  // Log success message once seeding is complete
   console.log('✅ Contact seeded');
 }
 
+// Export the seeding function so it can be called externally
 module.exports = seedContact;
