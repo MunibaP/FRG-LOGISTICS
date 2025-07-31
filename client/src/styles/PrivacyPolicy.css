@@ -1,0 +1,39 @@
+.privacy-policy {
+  padding: 5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.privacy-icon {
+  font-size: 3rem;
+  color: #198754;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.privacy-icon:hover {
+  transform: scale(1.1);
+}
+
+.privacy-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #14532d;
+  margin-bottom: 1rem;
+}
+
+.privacy-description {
+  font-size: 1.2rem;
+  color: #444;
+  font-style: italic;
+  max-width: 600px;
+  margin: 0 auto;
+  transition: color 0.3s ease;
+  text-align: center;
+}
+
+.privacy-description:hover {
+  color: #198754;
+}

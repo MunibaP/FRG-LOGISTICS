@@ -1,0 +1,166 @@
+.footer-section {
+  /* background-color: #f7f9f6; */
+  background: linear-gradient(to top, #e6f5ea, #ffffff); ;
+  color: #444; /* medium dark gray for body text */
+  padding: 3rem 1rem 2rem 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center; /* Center all text */
+}
+
+.footer-logo {
+  color: #2a7f62; /* deeper green for strong brand presence */
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.footer-tagline {
+  color: #386641; /* medium green, softer than logo */
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.footer-heading {
+  color: #2b6f53; /* dark green for headings */
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.footer-link {
+  color: #2a7f62; /* green links */
+  padding: 0.15rem 0;
+  transition: color 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 700;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #1b4332; /* darker green on hover */
+  text-decoration: underline;
+}
+
+.footer-contact {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #444;
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: center;
+}
+
+.icon {
+  color: #2a7f62;
+  margin-right: 0.7rem;
+  font-size: 1.8rem;
+}
+
+.footer-socials {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center; /* center social icons */
+  font-size: 2.5rem;
+  color: #2a7f62;
+  transition: color 0.3s ease;
+}
+
+.social-icon {
+  font-size: 2rem;
+  color: #2a7f62;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  color: #1b4332;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  border-top: 1px solid #d3e4cd;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+  display: flex;
+  justify-content: space-between; /* center bottom content */
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.footer-copy {
+  text-align: left;
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.footer-policy-link {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-policy-link {
+  color: #2a7f62;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s ease;
+}
+
+.footer-policy-link + .footer-policy-link {
+  margin-left: 2rem;
+}
+
+.footer-policy-link:hover,
+.footer-policy-link:focus {
+  color: #1b4332;
+  text-decoration: underline;
+}
+
+.footer-copy,
+.footer-policy-links {
+  flex: 1;
+}
+
+/* Map container keeps the same styles */
+.map-container {
+  max-width: 300px;
+  margin: 0 auto 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .footer-section {
+    text-align: center; /* keep center on desktop too */
+  }
+}
+
+@media (max-width: 767px) {
+  .footer-bottom {
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 0.5rem;
+    text-align: center !important;
+  }
+
+  .footer-copy,
+  .footer-policy-links {
+    flex: none !important;
+    width: 100%;
+    margin: 0 !important;
+  }
+
+  .footer-policy-links {
+    justify-content: center !important;
+    gap: 1rem;
+  }
+}

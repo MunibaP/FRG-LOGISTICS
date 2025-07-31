@@ -1,0 +1,83 @@
+.retail-section {
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-color: rgba(25, 135, 84, 0.85); /* fallback if image doesn't load */
+  background-blend-mode: multiply;
+  position: relative;
+}
+
+.retail-heading {
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6);
+}
+
+.retail-subheading {
+  font-size: 1.25rem;
+  color: #e0eee8ff; /* lighter green shade */
+  max-width: 480px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.retail-hero-img {
+  position: relative; /* or absolute if needed */
+  z-index: 10;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+@media (min-width: 768px) {
+  .retail-hero-img {
+    margin-bottom: 0; /* reset margin on desktop */
+  }
+}
+
+.retail-feature-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.retail-feature-icon {
+  color: #198754;
+}
+
+.retail-feature-col {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .retail-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .retail-heading {
+    font-size: 2rem;
+  }
+  .retail-subheading {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
+
+.quote-button-wrapper {
+  padding: 0 15px;
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 576px) {
+  .quote-button-wrapper .btn {
+    width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    font-size: 1.1rem;
+  }
+}

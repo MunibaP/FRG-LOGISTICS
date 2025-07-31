@@ -1,0 +1,32 @@
+.hero-section {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-section .overlay {
+  background-color: rgba(0, 0, 0, 0.5); 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-section .overlay {
+  position: relative;  
+  z-index: 1;          
+  pointer-events: auto; 
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    height: 70vh; /* changes the height of the image*/
+    background-position: top center; /* show top of image */
+  }
+
+  .hero-section .overlay {
+    padding: 2rem 1rem;
+  }
+}

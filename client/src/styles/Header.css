@@ -1,0 +1,88 @@
+/* Optional: fine-tune the navbar spacing or branding */
+.navbar-brand {
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  /* padding: 0; */
+  margin-right: 1rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: #238f7a;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+/* Base nav link styling */
+.nav-link, .dropdown-item {
+  color: #238f7a; /* green color */
+  transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.dropdown-title-link {
+  color: #666666 !important;
+  text-decoration: none !important;
+  font-weight: 500;
+}
+
+/* Hover effect */
+.nav-link:hover,
+.dropdown-title-link:hover,
+.dropdown-item:hover {
+  color: #3ac47d; /* lighter green on hover */
+  text-decoration: underline;
+}
+
+/* Active link style */
+.active-link {
+  color: #19692c !important; /* dark green for active */
+  font-weight: 700 !important;
+  text-decoration: underline;
+}
+
+.navbar-logo {
+  max-height: 60px; /* controls height inside navbar */
+  width: auto;      
+  object-fit: contain;
+  display: block;
+  transform: scale(1.3);   /* Visually enlarges the logo */
+  transform-origin: left center; /* Keeps the left alignment */
+   margin-left: -20px;
+}
+
+/* Medium screens (tablet) - reduce left margin */
+@media (max-width: 992px) {
+  .navbar-logo {
+    margin-left: -10px; /* less negative margin */
+  }
+  .navbar-brand {
+    padding-left: 0.5rem;
+  }
+}
+
+/* Small screens (mobile) - add left padding */
+@media (max-width: 576px) {
+  .navbar-logo {
+    margin-left: 0;
+    transform: scale(1); /* optional: scale down slightly for small */
+  }
+  .navbar-brand {
+    padding-left: 1rem; /* added padding so logo is not flush left */
+  }
+}
+
+/* Center nav links only on mobile (less than 992px) */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .navbar-collapse .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}

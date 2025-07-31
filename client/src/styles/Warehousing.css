@@ -1,0 +1,103 @@
+.warehousing-hero {
+  height: 60vh;
+  background: linear-gradient(rgba(0, 55, 0, 0.6), rgba(0, 55, 0, 0.6)),
+    url("../assets/warehousing.jpg") center/cover no-repeat;
+}
+
+/* Center all section headings */
+.warehousing-page h1,
+.warehousing-page h3,
+.warehousing-page h4 {
+  text-align: center;
+}
+
+.warehousing-page h3 + p {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .warehousing-page h3 + p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .warehousing-hero {
+    height: 40vh;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .warehousing-page h1 {
+    font-size: 1.8rem;
+  }
+
+  .warehousing-page p {
+    font-size: 1rem;
+  }
+
+  .warehousing-page ul {
+    padding-left: 1rem;
+  }
+}
+
+.custom-bullets {
+  list-style: none;         /* removes default bullets */
+  padding-left: 0;          /* optional: remove extra padding */
+}
+
+.custom-bullets li {
+  text-align: center;       /* center align if needed */
+  margin-bottom: 0.5rem;      /* spacing between items */
+  font-size: 1.2rem;
+}
+
+.custom-bullets i {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+/* Uncomment if you prefer spin instead of bounce */
+.custom-bullets li:hover i {
+  transform: rotate(20deg);
+}
+
+.fancy-list {
+  list-style: none;
+  padding-left: 2rem;
+  margin-left: 0;
+  text-align: center;
+}
+
+.fancy-list li {
+  display: inline-flex;          /* inline-flex to center horizontally */
+  align-items: center;           /* vertically center icon and text */
+  justify-content: center;       /* horizontally center contents */
+  gap: 0.5rem;                   /* space between icon and text */
+  margin-bottom: 0.75rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.fancy-list li i {
+  font-size: 1.5rem;
+  color: #28a745;
+  transition: transform 0.3s ease;
+  display: inline-block;         /* to allow transform */
+}
+
+/* Odd list items: icon moves right on hover */
+.fancy-list li:nth-child(odd):hover i {
+  transform: translateY(-50%) translateX(10px);
+  color: #198754;
+}
+
+/* Even list items: icon moves left on hover */
+.fancy-list li:nth-child(even):hover i {
+  transform: translateY(-50%) translateX(-10px);
+  color: #198754;
+}
+
+.cta-heading {
+  color: #298e5f; /* Replace with any color you want */
+}

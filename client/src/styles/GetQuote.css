@@ -1,0 +1,100 @@
+.quote-hero {
+  background: url('../assets/GetAQuote.jpg') center center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+}
+
+.quote-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 60, 0, 0.6); /* dark green overlay */
+  z-index: 1;
+}
+
+.quote-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.quote-form {
+  background-color: #fff;
+  border-radius: 1rem;
+}
+
+.trust-features h5 {
+  font-weight: bold;
+}
+
+/* Smooth input focus & hover */
+.quote-form .form-control,
+.quote-form .form-select {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.quote-form .form-control:focus,
+.quote-form .form-select:focus {
+  border-color: #28a745;
+  box-shadow: 0 0 10px rgba(40, 167, 69, 0.2);
+  transform: scale(1.01);
+}
+
+.quote-form .form-control:hover,
+.quote-form .form-select:hover {
+  border-color: #28a745;
+}
+
+/* Form container card hover */
+.quote-form:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Button transition */
+.quote-form button {
+  transition: all 0.3s ease;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.quote-form button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(33, 136, 56, 0.3);
+}
+
+.quote-submit-btn {
+  padding: 0.4rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 40px;
+  background: linear-gradient(135deg, #28a745, #56c870); 
+  color: white;
+  box-shadow: 0 4px 10px rgba(40, 167, 69, 0.2);
+  transition: all 0.3s ease;
+}
+
+.quote-submit-btn:hover {
+  background: linear-gradient(135deg, #1e7e34, #4bbd63);
+  box-shadow: 0 6px 14px rgba(40, 167, 69, 0.35);
+  transform: translateY(-2px);
+}
+
+.quote-submit-btn:active {
+  transform: scale(0.97);
+  box-shadow: 0 3px 8px rgba(40, 167, 69, 0.2);
+}
+
+@media (max-width: 576px) {
+  .quote-hero {
+    height: 40vh; /*taller on small screens*/
+    background-position: center top; /* adjust focal point */
+  }
+}
+
+

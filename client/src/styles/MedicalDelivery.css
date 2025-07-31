@@ -1,0 +1,96 @@
+.medical-section {
+  background-color: #f9fdf9;
+  color: #222;
+  min-height: 100vh;
+}
+
+.medical-heading {
+  font-weight: 700;
+}
+
+.medical-intro {
+  font-size: 1.1rem;
+  color: #2a6f2a; /* green accent */
+}
+
+.compliance-section,
+.client-commitment-section {
+  background-color: #e9f4ea;
+  box-shadow: 0 4px 15px rgba(25, 135, 84, 0.15);
+  color: #51a451;
+}
+
+/* UPDATED compliance list styling */
+.compliance-list li {
+  display: flex;           /* Align icon and text horizontally */
+  align-items: center;     /* Vertically center icon with text */
+  gap: 0.2rem !important;   /* Space between icon and text */
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.2;
+  /* justify-content: center; */
+  font-weight: 500;
+}
+
+.compliance-list li .icon {
+  margin-right: 10px;
+  font-size: 1.4rem;
+  color: #198754;
+  margin-top: 0;           /* Remove vertical offset */
+  min-width: 24px;         /* Fix icon width for consistent alignment */
+  display: flex;
+  align-items: center;
+  transform: translateY(1px); 
+}
+
+.commitment-list li {
+  align-items: flex-start;
+  gap: 0.6rem; 
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  line-height: 1.4;
+  font-style: italic;
+}
+
+.compliance-list li svg,
+.commitment-list li svg {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .medical-intro {
+    font-size: 1rem;
+  }
+  
+  .compliance-list li {
+    font-size: 1rem;
+    gap: 8px;
+  }
+}
+
+.medical-section h3 {
+  font-weight: 700; /* bold */
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.moving-icon {
+  display: inline-block;
+  animation: bounce 2s infinite;
+  color: #2a6f2a;
+}
+
+@media (max-width: 768px) {
+  .medical-section .btn {
+    margin-bottom: 1.5rem; /* space below button on mobile */
+  }
+}

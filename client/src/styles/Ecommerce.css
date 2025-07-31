@@ -1,0 +1,73 @@
+.ecommerce-section {
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  color: #333;
+  background-color: #f9f9f9; /* fallback */
+}
+
+.ecommerce-heading {
+  font-weight: 700;
+  color: #198754; /* FRG green */
+}
+
+.ecommerce-intro {
+  font-size: 1.15rem;
+  color: #e0e0e0 ;
+  margin-bottom: 3rem;
+}
+
+.feature-block {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+  backdrop-filter: blur(5px); /* subtle glass effect */
+  transform: translateY(0); /* start flat */
+  will-change: transform, box-shadow;
+}
+
+.feature-block:hover {
+  transform: translateY(-15px) scale(1.02); /* lifted & scaled */
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* deeper 3D shadow */
+  background: rgba(255, 255, 255, 0.92); /* slight brightening on hover */
+}
+
+.feature-block.left-block {
+  flex-direction: row;
+  text-align: left;
+}
+
+.feature-block.right-block {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+}
+
+.feature-text h4 {
+  font-weight: 600;
+  color: #198754;
+  margin-bottom: 0.5rem;
+}
+
+.feature-text p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .feature-block {
+    flex-direction: column !important;
+    text-align: center !important;
+  }
+  .feature-text {
+    margin-left: 0 !important;
+    max-width: 100% !important;
+  }
+}

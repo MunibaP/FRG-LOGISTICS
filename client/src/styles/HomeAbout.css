@@ -1,0 +1,92 @@
+.home-about-section {
+  /* background-color: #f8f9fa;
+  background: linear-gradient(135deg, #e6f4ea, #c7e9d9); */
+  background: linear-gradient(135deg, #e0f2f1, #e6f4ea);
+}
+
+.icon {
+  color: #3ac47d;
+  font-size: 1.5rem;
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, #3ac47d, #238f7a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #198754;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-icon:hover {
+  color: #0f5132;
+}
+
+@media (max-width: 768px) {
+  .home-about-section .row {
+    flex-direction: column;
+  }
+
+  .home-about-section .col-md-6 {
+    margin-top: 2rem !important;
+  }
+
+  /* Remove the inline negative margin if applied */
+  .home-about-section .text-center[style] {
+    margin-top: 3rem !important;
+  }
+
+  /* Add space between image and heading */
+  .home-about-section .text-center {
+    margin-top: 2rem;
+  }
+
+  .home-about-section .feature-icon {
+    font-size: 2.2rem;
+  }
+
+  .home-about-section .fw-semibold {
+    font-size: 1rem;
+  }
+
+  .home-about-section p.fs-5 {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .home-about-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Ensure columns stay centered on small screens */
+@media (max-width: 576px) {
+  .home-about-section .row {
+    justify-content: center !important;
+    text-align: center;
+  }
+
+  .home-about-section .col-6,
+  .home-about-section .col-sm-6 {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-about-section .feature-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .home-about-section h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.25rem;
+    max-width: 90%;
+  }
+}

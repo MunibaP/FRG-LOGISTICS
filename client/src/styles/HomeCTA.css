@@ -1,0 +1,93 @@
+.contact-section {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(25, 135, 84, 0.8),
+    rgba(13, 110, 253, 0.8)
+  );
+  overflow: hidden;
+}
+
+/* DIAGONAL LEFT SIDE */
+.contact-image-col {
+  position: relative;
+  min-height: 450px;
+  clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+  background: linear-gradient(
+    135deg,
+    rgba(25, 135, 84, 0.8),
+    rgba(13, 110, 253, 0.8)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* IMAGE ON TOP of gradient */
+.contact-image-col::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-image: url('../assets/HomeContact.jpg'); /* Adjust path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2; /* Above gradient */
+  clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);
+
+}
+
+/* You can remove this if not using <img> tag directly inside */
+.contact-image-col img {
+  display: none; /* Avoid accidental conflicts */
+}
+
+/* RIGHT SIDE CONTENT */
+.contact-info-col {
+  background-color: #fff;
+  padding: 60px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Diagonal shape on the right */
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.content-wrapper {
+  max-width: 600px;
+  text-align: center;
+  z-index: 3;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.contact-details p {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-details .fa-icon {
+  margin-right: 0.5rem;
+  color: var(--bs-success);
+}
+
+@media (max-width: 767.98px) {
+  .contact-image-col {
+    clip-path: none;
+    min-height: 300px;
+  }
+
+  .contact-info-col {
+    padding: 40px 20px;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+}
