@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap"; // Layout and UI components
 import { motion } from "framer-motion"; // Animation library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // For icons
-import { faPhoneAlt, faEnvelope, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons"; // Icons used in contact info
+import { faPhoneAlt, faEnvelope, faMapMarkerAlt, faMobileAlt} from "@fortawesome/free-solid-svg-icons"; // Icons used in contact info
 import { Link } from "react-router-dom"; // Navigation link
 import "../../styles/HomeCTA.css"; // Custom styles
 
@@ -31,6 +31,7 @@ const ContactSection = () => {
               </p>
               <div className="contact-details mb-4">
                 <p><FontAwesomeIcon icon={faPhoneAlt} className="text-success me-2" /> +1 (123) 456-7890</p>
+                <p><FontAwesomeIcon icon={faMobileAlt} className="text-success me-2" /> +1 (987) 654-3210</p>
                 <p><FontAwesomeIcon icon={faEnvelope} className="text-success me-2" /> contact@frglogistics.ca</p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} className="text-success me-2" /> 123 Logistics Ave, Toronto, ON</p>
               </div>
