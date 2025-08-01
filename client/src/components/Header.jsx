@@ -1,13 +1,20 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom"; 
 import logo from "../assets/logo1.png";
 import "../styles/Header.css"
 
 // Header component for navigation bar
 const Header = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const isServicesActive = location.pathname.startsWith("/services");
+
+  // Handler to navigate to /services when clicking the dropdown toggle text
+  const handleServicesClick = (e) => {
+    e.preventDefault();  // prevent dropdown toggle default behavior (optional)
+    navigate("/services");
+  };
   
   return (
     // Sticky top navbar with shadow
@@ -53,11 +60,13 @@ const Header = () => {
             <NavDropdown
               title={
                 <span
+                  onClick={handleServicesClick}
                   className={
                     isServicesActive
                       ? "dropdown-title-link active-link"
                       : "dropdown-title-link"
                   }
+                  style={{ cursor: "pointer" }}
                 >
                   Services
                 </span>
