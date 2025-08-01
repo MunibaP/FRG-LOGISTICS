@@ -135,7 +135,7 @@ const Quote = () => {
                   </Form.Group>
 
                   {/*Services */}
-                  <Form.Group className="mb-3">
+                  {/* <Form.Group className="mb-3">
                     <Form.Label className="fw-bold">Service Type</Form.Label>
                     <Form.Select name="serviceType" required value={formData.serviceType} onChange={handleChange}>
                       <option value="">Select a service</option>
@@ -145,6 +145,19 @@ const Quote = () => {
                       <option>E-Commerce Parcel</option>
                       <option>Retail & B2B</option>
                       <option>Warehousing & Sorting</option>
+                    </Form.Select>
+                  </Form.Group> */}
+
+                  <Form.Group className="mb-3">
+                    <Form.Label className="fw-bold">Service Type</Form.Label>
+                    <Form.Select
+                      name="serviceType"
+                      required
+                      value={formData.serviceType}
+                      onChange={handleChange}
+                    >
+                      <option value="">Select a Service</option>
+                      <option value="Same-Day Delivery">Same-Day Delivery</option>
                     </Form.Select>
                   </Form.Group>
 
