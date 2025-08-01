@@ -1,11 +1,14 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/logo1.png";
 import "../styles/Header.css"
 
 // Header component for navigation bar
 const Header = () => {
+  const location = useLocation();
+  const isServicesActive = location.pathname.startsWith("/services");
+  
   return (
     // Sticky top navbar with shadow
     <Navbar bg="light" expand="lg" sticky="top" className="shadow-sm">
@@ -45,19 +48,19 @@ const Header = () => {
             >
               About Us
             </NavLink>
-              {/*text-success makes the Services text Green*/}
-             <NavDropdown
+
+            {/*text-success makes the Services text Green*/}
+            <NavDropdown
               title={
-                <NavLink
-                  to="/services"
-                  className={({ isActive }) =>
-                    isActive
+                <span
+                  className={
+                    isServicesActive
                       ? "dropdown-title-link active-link"
                       : "dropdown-title-link"
                   }
                 >
                   Services
-                </NavLink>
+                </span>
               }
               id="services-dropdown"
             >
