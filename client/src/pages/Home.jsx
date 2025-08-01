@@ -6,7 +6,7 @@ import Hero from "../components/Home/Hero";                         // Top hero/
 import HomeAbout from "../components/Home/HomeAbout";               // Short about section
 import ServicesPreview from "../components/Home/ServicesPreview";   // Brief overview of services
 import WhyChooseUs from "../components/Home/WhyChooseUs";           // Reasons to choose FRG Logistics
-import Testimonials from "../components/Home/Testimonials";         // Client testimonials carousel
+// import Testimonials from "../components/Home/Testimonials";         // Client testimonials carousel
 import HomeCTA from "../components/Home/HomeCTA";                    // Final call-to-action section
 
 // Define the Home component that renders all imported sections
@@ -17,7 +17,7 @@ const Home = () => {
       <HomeAbout />
       <ServicesPreview />
       <WhyChooseUs />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <HomeCTA />
     </>
   );
