@@ -1,7 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Container } from "react-bootstrap";
 import { NavLink, useLocation, useNavigate } from "react-router-dom"; 
-import logo from "../assets/logo1.png";
+import logo from "../assets/logoChange4.png";
 import "../styles/Header.css"
 
 // Header component for navigation bar
