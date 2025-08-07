@@ -8,7 +8,7 @@ import {
   faTruckMoving,
   faHandshake,
 } from "@fortawesome/free-solid-svg-icons";
-import retailBg from "../../assets/retail.jpg";  // Retail-themed background image
+import retailBg from "../../assets/FRGretail.png";  // Retail-themed background image
 import "../../styles/Retail.css";
 
 const retailFeatures = [

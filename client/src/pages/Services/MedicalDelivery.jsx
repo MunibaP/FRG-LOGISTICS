@@ -9,7 +9,7 @@ import {
   faPhone,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
-import medicalBg from "../../assets/MedicalDelivery.jpg"; // Background image for medical delivery section
+import medicalBg from "../../assets/medicalDelivery.png"; // Background image for medical delivery section
 import "../../styles/MedicalDelivery.css";
 
 const Medical = () => {

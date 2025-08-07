@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
 import "../../styles/HeroSection.css";
-import heroImg from "../../assets/EVFleet.jpg"; // Background image for hero section
+import heroImg from "../../assets/FRGEVFleet.png"; // Background image for hero section
 
 const Home = () => {
   return (

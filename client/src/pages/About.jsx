@@ -2,7 +2,7 @@
 import React from "react"
 import { Container, Row, Col, Card, Accordion } from "react-bootstrap";
 import { motion } from "framer-motion"; // For animations on scroll/hover
-import aboutImg from "../assets/team.jpg"; // Team image
+import aboutImg from "../assets/FRGteam.png"; // Team image
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // FontAwesome icons
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons"; // Quote icons
 import "../styles/About.css"; // Custom styling for this component
