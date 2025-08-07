@@ -29,12 +29,36 @@ const ContactSection = () => {
                 Have questions or want a custom delivery plan? Contact FRG Logistics today and
                 experience eco-friendly, reliable service.
               </p>
-              <div className="contact-details mb-4">
+              {/* <div className="contact-details mb-4">
                 <p><FontAwesomeIcon icon={faPhoneAlt} className="text-success me-2" /> +1 (123) 456-7890</p>
                 <p><FontAwesomeIcon icon={faMobileAlt} className="text-success me-2" /> +1 (987) 654-3210</p>
                 <p><FontAwesomeIcon icon={faEnvelope} className="text-success me-2" /> contact@frglogistics.ca</p>
                 <p><FontAwesomeIcon icon={faMapMarkerAlt} className="text-success me-2" /> 123 Logistics Ave, Toronto, ON</p>
+              </div> */}
+
+              <div className="contact-details mb-4">
+                <div className="contact-item">
+                  <span className="icon-wrapper">
+                    <FontAwesomeIcon icon={faPhoneAlt} className="text-success" />
+                  </span>
+                  <span>+1 (123) 456-7890</span>
+                </div>
+
+                <div className="contact-item">
+                  <span className="icon-wrapper">
+                    <FontAwesomeIcon icon={faMobileAlt} className="text-success" />
+                  </span>
+                  <span>+1 (987) 654-3210</span>
+                </div>
+
+                <div className="contact-item">
+                  <span className="icon-wrapper">
+                    <FontAwesomeIcon icon={faEnvelope} className="text-success fa-fw" />
+                  </span>
+                  <span>contact@frglogistics.ca</span>
+                </div>
               </div>
+              
               <Link to="/contact">
                 <Button variant="success" size="lg" className="rounded-pill px-4">
                   Contact Us

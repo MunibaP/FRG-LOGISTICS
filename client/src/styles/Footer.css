@@ -164,3 +164,15 @@
     gap: 1rem;
   }
 }
+
+.footer-logo-img {
+  max-width: 220px !important;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-tagline {
+  font-size: 0.95rem;
+  color: #2a7f62;
+  margin-top: 5px;
+}

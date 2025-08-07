@@ -4,6 +4,7 @@ import "../../styles/WhyChoose.css";  // Custom styles
 
 // Feature card images
 import ecoFriendlyImg from "../../assets/EcoFriendly2.jpg";
+// import ecoFriendlyImg from "../../assets/electricVan.png";
 import costEfficiencyImg from "../../assets/CostEfficiency.jpg";
 import reliabilityImg from "../../assets/Reliability.jpg";
 import gpsTrackingImg from "../../assets/GPSTracking.jpg";
@@ -49,9 +50,9 @@ const featureCards = [
 // Real-time statistics for the brand
 const stats = [
   { label: "On-Time Delivery Rate", value: 98, suffix: "%" },
-  { label: "E-Commerce Clients Served", value: 120 },
-  { label: "Packages Delivered", value: 250000 },
-  { label: "EV Kilometers Driven", value: 175000 },
+  // { label: "E-Commerce Clients Served", value: 120 },
+  { label: "Packages Delivered", value: 550000 },
+  { label: "EV Kilometers Driven", value: 1360000 },
 ];
 
 const WhyChoose = () => {

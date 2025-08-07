@@ -3,28 +3,48 @@ import { Container, Row, Col, Button, Card, Modal, Form } from "react-bootstrap"
 import { motion } from "framer-motion";
 import CountUp from "react-countup";
 
-import evVan from "../assets/evVan.jpg";
-import cargoBike from "../assets/cargoTruck.jpg";
-import electricTruck from "../assets/electricTruck.jpg";
+// import evVan from "../assets/evVan.jpg";
+// import cargoBike from "../assets/cargoTruck.jpg";
+// import electricTruck from "../assets/electricTruck.jpg";
+
+import evTesla  from "../assets/evCar1.jpg";
+import evVolkswagen from "../assets/evCar2.jpg";
+import evMitsubishi  from "../assets/evCar3.jpg";
+
 import fleetBg from "../assets/map.png";
 
 import "../styles/Fleet.css";
 
 const fleetData = [
   {
-    img: evVan,
-    name: "Small EV Van",
-    specs: ["Range: 200 km", "Payload: 800 kg", "Eco-friendly"],
+    img: evTesla,
+    name: " Tesla Model X",
+    specs: 
+    [
+      "Range: 348 miles",
+      "Cargo Capacity: 91.6 cu ft (rear seats folded)", 
+      "Eco-friendly: 100% Electric – Zero Emissions"
+    ],
   },
   {
-    img: cargoBike,
-    name: "Cargo Bike",
-    specs: ["Urban delivery", "Zero emissions", "Compact & agile"],
+    img: evVolkswagen,
+    name: "Volkswagen ID.4",
+    specs: 
+    [
+      "Range: 275 miles", 
+      "Cargo Capacity: 64.2 cu ft (with seats down)", 
+      "Eco-Friendly: 100% Electric – Zero Emissions"
+    ],
   },
   {
-    img: electricTruck,
-    name: "Electric Truck",
-    specs: ["Range: 300 km", "Payload: 2,500 kg", "Fast charging"],
+    img: evMitsubishi,
+    name: "Mitsubishi Outlander PHEV",
+    specs: 
+    [
+      "Range: 38 miles (EV only) / 420+ miles total (hybrid)", 
+      "Cargo Capacity: 64.7 cu ft",
+      "Eco-Friendly: Plug-in Hybrid – Low Emissions"
+    ],
   },
 ];
 

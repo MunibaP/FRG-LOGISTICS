@@ -10,12 +10,13 @@ import {
 import {
   faFacebookF,
   faLinkedinIn,
-  faTwitter,
+  faXTwitter,
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 import { motion } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import "../styles/Footer.css"; // Custom styles for the footer
+import logo from "../assets/logoChange4.png";
 
 const Footer = () => {
   const location = useLocation();
@@ -40,10 +41,23 @@ const Footer = () => {
       <Container>
         <Row className="mb-4 align-items-start">
           {/* Brand Logo & Tagline */}
-          <Col md={3} sm={6} className="mb-3">
+          {/* <Col md={3} sm={6} className="mb-3">
             <h3 className="footer-logo">FRG Logistics</h3>
             <p className="footer-tagline">Efficient. Reliable. Green.</p>
+          </Col> */}
+
+          <Col md={3} sm={6} className="mb-3">
+            <div className="footer-brand d-flex flex-column align-items-start">
+              <img
+                src={logo}
+                alt="FRG Logistics Logo"
+                className="footer-logo-img mb-2"
+                style={{ width: "220px", height: "auto" }}
+              />
+              {/* <p className="footer-tagline">Efficient. Reliable. Green.</p> */}
+            </div>
           </Col>
+
 
           {/* Navigation links for quick access to site pages */}
           <Col md={2} sm={6} className="mb-3">
@@ -111,7 +125,7 @@ const Footer = () => {
                 aria-label="Twitter"
                 className="social-icon"
               >
-                <FontAwesomeIcon icon={faTwitter} />
+                <FontAwesomeIcon icon={faXTwitter} />
               </a>
               <a
                 href="https://www.instagram.com/accounts/emailsignup/"
