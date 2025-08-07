@@ -66,7 +66,7 @@ const About = () => {
                             
                             {/* Company facts in list format */}
                             <ul className="list-unstyled">
-                                <li style={{ "--i": 0 }}><strong>Business Name:</strong> FRG Logistics</li>
+                                <li style={{ "--i": 0 }}><strong>Business Name:</strong> FRG Logistics Inc.</li>
                                 <li style={{ "--i": 1 }}><strong>Location:</strong> Mississauga, Ontario</li>
                                 <li style={{ "--i": 2 }}><strong>Service Area:</strong> Greater Toronto Area (GTA)</li>
                                 <li className="slogan-line">

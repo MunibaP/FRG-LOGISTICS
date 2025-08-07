@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faPhone, faEnvelope, faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faPhone, faEnvelope, faGlobe, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import "../styles/Contact.css";
 
@@ -101,16 +101,20 @@ const Contact = () => {
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faPhone} className="me-2 icon-muted" />
-                  <span><strong>Phone:</strong> +1 (123) 456-7890</span>
+                  <span><strong>Main:</strong> +1 (123) 456-7890</span>
+                </li>
+                <li className="mb-3 d-flex align-items-center text-muted">
+                  <FontAwesomeIcon icon={faMobileAlt} className="me-2 icon-muted" />
+                  <span><strong>Mobile:</strong> +1 (987) 654-3210</span>
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faEnvelope} className="me-2 icon-muted" />
                   <span><strong>Email:</strong> contact@frglogistics.ca</span>
                 </li>
-                <li className="mb-3 d-flex align-items-center text-muted">
+                {/* <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faGlobe} className="me-2 icon-muted" />
                   <span><strong>Website:</strong> www.frglogistics.ca</span>
-                </li>
+                </li> */}
               </ul>
             </motion.div>
           </Col>
