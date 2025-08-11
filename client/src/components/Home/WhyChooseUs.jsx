@@ -3,13 +3,16 @@ import CountUp from "react-countup"; // For animated statistics
 import "../../styles/WhyChoose.css";  // Custom styles
 
 // Feature card images
-import ecoFriendlyImg from "../../assets/EcoFriendly2.jpg";
-// import ecoFriendlyImg from "../../assets/electricVan.png";
+// import ecoFriendlyImg from "../../assets/EcoFriendly2.jpg";
+import ecoFriendlyImg from "../../assets/FRGEcoFriendly4.png";
 import costEfficiencyImg from "../../assets/CostEfficiency.jpg";
-import reliabilityImg from "../../assets/Reliability.jpg";
+// import reliabilityImg from "../../assets/Reliability.jpg";
+import reliabilityImg from "../../assets/FRGReliability2.png";
 import gpsTrackingImg from "../../assets/GPSTracking.jpg";
-import scalabilityImg from "../../assets/Scalability.jpg";
-import driversImg from "../../assets/ProfessionalDrivers.jpg";
+// import scalabilityImg from "../../assets/Scalability.jpg";
+import scalabilityImg from "../../assets/scalability3.png";
+// import driversImg from "../../assets/ProfessionalDrivers.jpg";
+import driversImg from "../../assets/FRGProfessionalDrivers.png";
 import phoneMockup from "../../assets/phone.png";
 import { motion } from "framer-motion";
 

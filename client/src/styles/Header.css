@@ -44,7 +44,7 @@
 }
 
 .navbar-logo {
-  max-height: 60px; /* controls height inside navbar */
+  max-height: 55px; /* controls height inside navbar */
   width: auto;      
   object-fit: contain;
   display: block;

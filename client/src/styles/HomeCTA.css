@@ -31,9 +31,9 @@
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background-image: url('../assets/HomeContact.jpg'); /* Adjust path */
+  background-image: url('../assets/HomeContact2.png'); /* Adjust path */
   background-size: cover;
-  background-position: center;
+  background-position: top center;
   background-repeat: no-repeat;
   z-index: 2; /* Above gradient */
   clip-path: polygon(0 0, 100% 0%, 98% 100%, 0% 100%);

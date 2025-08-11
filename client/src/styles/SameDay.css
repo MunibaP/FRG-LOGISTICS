@@ -133,12 +133,12 @@ body {
 
 .why-bullets li {
   position: relative;
-  padding-left: 0; /* space for the custom bullet */
-  margin-bottom: 0.75rem;
+  padding-left: 2rem; /* space for the custom bullet */
+  margin-bottom: 1.5rem !important;
   line-height: 1.4;
   font-size: 1.1rem;
   list-style: none;
-  display: inline-flex;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   white-space: nowrap;
@@ -150,8 +150,8 @@ body {
   /* content: "✅"; */
   position: absolute;
   left: 0;
-  top: 0;
-  font-size: 1rem;
+  /* top: 0; */
+  font-size: 1.2rem;
   line-height: 1;
 }
 
@@ -185,4 +185,25 @@ body {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+}
+
+@media (max-width: 768px) {
+  .why-bullets li {
+    white-space: normal;  /* allow wrapping */
+    word-break: break-word; /* break long words if needed */
+    text-align: left; /* left-align bullet text for readability */
+    margin-bottom: 1.2rem !important;
+  }
+}
+
+.bullet-icon {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  margin-top: 0.2rem; /* align icon vertically with first line of text */
+}
+
+.bullet-text {
+  /* flex: 1;  */
+  word-break: break-word;
 }

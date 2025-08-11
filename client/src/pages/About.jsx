@@ -22,7 +22,7 @@ const About = () => {
                     {/* Main headline */}
                     <h1 className="text-center fw-bold mb-3 text-success heading-gradient">
                         <i className="fas fa-shipping-fast me-2"></i>
-                        Your Premier <span className="highlight heading-gradient"> Eco-Friendly</span> Logistics Partner in the GTA
+                        Your Premier Eco-Friendly Logistics Partner in the GTA
                     </h1>
 
                      {/* Subheading paragraph */}
@@ -72,7 +72,7 @@ const About = () => {
                                 <li className="slogan-line">
                                     <strong>Slogan:</strong>{" "}
                                     <span className="slogan">
-                                        {["Efficient.", "Reliable.", "Green."].map((word, index) => (
+                                        {["Fast.", "Reliable.", "Green."].map((word, index) => (
                                             <span key={index} className="slogan-word" style={{ "--i": index }}>
                                                 {word}
                                             </span>

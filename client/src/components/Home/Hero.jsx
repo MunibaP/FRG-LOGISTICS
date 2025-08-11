@@ -17,7 +17,7 @@ const Home = () => {
             transition={{ duration: 0.6 }}
             className="display-4 fw-bold"
           >
-            Efficient. Reliable. Green.
+            Fast. Reliable. Green.
           </motion.h1>
 
           <motion.h2

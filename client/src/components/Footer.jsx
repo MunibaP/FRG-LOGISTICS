@@ -6,6 +6,7 @@ import {
   faPhoneAlt,
   faEnvelope,
   faMapMarkerAlt,
+  faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -89,6 +90,10 @@ const Footer = () => {
             <p className="footer-contact">
               <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
               +1 (123) 456-7890
+            </p>
+            <p className="footer-contact">
+              <FontAwesomeIcon icon={faMobileAlt} className="icon" />
+              +1 (987) 654-3210
             </p>
             <p className="footer-contact">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />

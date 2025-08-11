@@ -8,7 +8,7 @@ import {
   faClock,
   faBolt,
 } from "@fortawesome/free-solid-svg-icons"; // Icons used in features
-import aboutImg from "../../assets/CourierDelivery.jpg"; // About section image
+import aboutImg from "../../assets/HomeAbout2.png"; // About section image
 import "../../styles/HomeAbout.css"; // Custom styles
 
 // Features to highlight with icons and labels
@@ -46,7 +46,7 @@ const HomeAbout = () => {
               viewport={{ once: true }}
             >
               <h2 className="fw-bold text-success mb-3">
-                About <span className="gradient-text">FRG Logistics</span>
+                About FRG Logistics
               </h2>
             </motion.div>
 

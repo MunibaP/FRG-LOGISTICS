@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button, Accordion } from "react-bootstrap";
 import { motion } from "framer-motion";
-import SameDayImg from "../../assets/SameDay.jpg";
+import SameDayImg from "../../assets/SameDayDelivery3.png";
 import "../../styles/SameDay.css";
 
 const processSteps = [
@@ -95,7 +95,7 @@ const SameDay = () => {
                     variants={bulletVariants}
                     style={{ marginBottom: "0.75rem" }}
                   >
-                    ✅ {text}
+                    <span className="bullet-icon">✅</span> <span className="bullet-text">{text}</span>
                   </motion.li>
                 ))}
               </ul>
