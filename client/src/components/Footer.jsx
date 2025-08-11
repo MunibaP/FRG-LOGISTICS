@@ -6,7 +6,6 @@ import {
   faPhoneAlt,
   faEnvelope,
   faMapMarkerAlt,
-  faMobileAlt,
 } from "@fortawesome/free-solid-svg-icons";
 import {
   faFacebookF,
@@ -47,12 +46,12 @@ const Footer = () => {
             <p className="footer-tagline">Efficient. Reliable. Green.</p>
           </Col> */}
 
-          <Col md={3} sm={6} className="mb-3">
+          <Col md={3} sm={6} className="mb-3 footer-logo-col">
             <div className="footer-brand d-flex flex-column align-items-start">
               <img
                 src={logo}
                 alt="FRG Logistics Logo"
-                className="footer-logo-img mb-2"
+                className="footer-logo-img mb-2 mx-auto d-block"
                 style={{ width: "220px", height: "auto" }}
               />
               {/* <p className="footer-tagline">Efficient. Reliable. Green.</p> */}
@@ -88,21 +87,21 @@ const Footer = () => {
           <Col md={3} sm={6} className="mb-3">
             <h5 className="footer-heading">Contact Us</h5>
             <p className="footer-contact">
-              <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
-              +1 (123) 456-7890
-            </p>
-            <p className="footer-contact">
-              <FontAwesomeIcon icon={faMobileAlt} className="icon" />
-              +1 (987) 654-3210
-            </p>
-            <p className="footer-contact">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              contact@frglogistics.ca
+              info@frglogistics.ca
             </p>
             <p className="footer-contact">
+              <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
+              +1 (647) 286-6834
+            </p>
+            <p className="footer-contact">
+              <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
+              +1 (438) 308-1520
+            </p>
+            {/* <p className="footer-contact">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
               123 Logistics Ave, Toronto, ON
-            </p>
+            </p> */}
             {/* Social media icon links */}
             <div className="footer-socials">
               <a
