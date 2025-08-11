@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import warehouseImg from "../../assets/warehouse.jpg";  // Image for warehouse section
-import sortingImg from "../../assets/sorting.jpg"; // Image for sorting section
+import warehouseImg from "../../assets/warehouse1.png";  // Image for warehouse section
+import sortingImg from "../../assets/sorting1.png"; // Image for sorting section
 import "../../styles/Warehousing.css"; // Custom styles for this page
 
 // Warehousing component
@@ -55,7 +55,7 @@ const Warehousing = () => {
               transition={{ duration: 0.7 }}
             >
               <h3 className="text-success fw-bold mt-4">Streamlined Warehousing Services</h3>
-              <p className="mt-3 fs-5 text-center">
+              <p className="smaller-text mt-3 text-center">
                 FRG Logistics offers warehousing and sorting support to help you manage inventory with ease. Our
                 eco-conscious facilities are designed to handle:
               </p>
@@ -93,7 +93,7 @@ const Warehousing = () => {
               transition={{ duration: 0.7 }}
             >
               <h3 className="text-success fw-bold mt-4">Integrated Logistics Support</h3>
-              <p className="mt-3 fs-5 text-center">
+              <p className="smaller-text mt-3 text-center">
                 We simplify your delivery workflow by integrating warehousing with our eco-friendly fleet:
               </p>
 

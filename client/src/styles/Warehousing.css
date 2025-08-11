@@ -33,7 +33,7 @@
   }
 
   .warehousing-page p {
-    font-size: 1rem;
+    font-size: 1rem !important;
   }
 
   .warehousing-page ul {
@@ -49,7 +49,8 @@
 .custom-bullets li {
   text-align: center;       /* center align if needed */
   margin-bottom: 0.5rem;      /* spacing between items */
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 2;
 }
 
 .custom-bullets i {
@@ -73,10 +74,11 @@
   display: inline-flex;          /* inline-flex to center horizontally */
   align-items: center;           /* vertically center icon and text */
   justify-content: center;       /* horizontally center contents */
-  gap: 0.5rem;                   /* space between icon and text */
+  gap: 0.7rem;                   /* space between icon and text */
   margin-bottom: 0.75rem;
   cursor: pointer;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 2;
 }
 
 .fancy-list li i {
@@ -100,4 +102,8 @@
 
 .cta-heading {
   color: #298e5f; /* Replace with any color you want */
+}
+
+.smaller-text {
+  font-size: 1.2rem !important;
 }
