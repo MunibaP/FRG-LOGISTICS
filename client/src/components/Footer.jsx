@@ -88,15 +88,21 @@ const Footer = () => {
             <h5 className="footer-heading">Contact Us</h5>
             <p className="footer-contact">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
-              info@frglogistics.ca
+              <a href="mailto:info@frglogistics.ca" className="footer-link">
+                info@frglogistics.ca
+              </a>
             </p>
             <p className="footer-contact">
               <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
-              +1 (647) 286-6834
+              <a href="tel:+16472866834" className="footer-link">
+                +1 (647) 286-6834
+              </a>
             </p>
             <p className="footer-contact">
               <FontAwesomeIcon icon={faPhoneAlt} className="icon" />
-              +1 (438) 308-1520
+              <a href="tel:+14383081520" className="footer-link">
+                +1 (438) 308-1520
+              </a>
             </p>
             {/* <p className="footer-contact">
               <FontAwesomeIcon icon={faMapMarkerAlt} className="icon" />
