@@ -121,7 +121,11 @@ const Medical = () => {
           </p>
           <p>
             <FontAwesomeIcon icon={faPhone} className="me-2 moving-icon" />
-            <strong>Phone:</strong> (123) 456-7890
+            <strong>Phone:</strong> +1 (647) 286-6834
+          </p>
+          <p>
+            <FontAwesomeIcon icon={faPhone} className="me-2 moving-icon" />
+            <strong>Phone:</strong> +1 (438) 308-1520
           </p>
           <p>
             <FontAwesomeIcon icon={faEnvelope} className="me-2 moving-icon" />
