@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap"; // Layout and UI components
 import { motion } from "framer-motion"; // Animation library
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // For icons
-import { faPhoneAlt, faEnvelope, faMapMarkerAlt, faMobileAlt} from "@fortawesome/free-solid-svg-icons"; // Icons used in contact info
+import { faPhoneAlt, faEnvelope, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons"; // Icons used in contact info
 import { Link } from "react-router-dom"; // Navigation link
 import "../../styles/HomeCTA.css"; // Custom styles
 
@@ -41,21 +41,21 @@ const ContactSection = () => {
                   <span className="icon-wrapper">
                     <FontAwesomeIcon icon={faPhoneAlt} className="text-success" />
                   </span>
-                  <span>+1 (123) 456-7890</span>
+                  <span>+1 (647) 286-6834</span>
                 </div>
 
                 <div className="contact-item">
                   <span className="icon-wrapper">
-                    <FontAwesomeIcon icon={faMobileAlt} className="text-success" />
+                    <FontAwesomeIcon icon={faPhoneAlt} className="text-success" />
                   </span>
-                  <span>+1 (987) 654-3210</span>
+                  <span>+1 (438) 308-1520</span>
                 </div>
 
                 <div className="contact-item">
                   <span className="icon-wrapper">
                     <FontAwesomeIcon icon={faEnvelope} className="text-success fa-fw" />
                   </span>
-                  <span>contact@frglogistics.ca</span>
+                  <span>info@frglogistics.ca</span>
                 </div>
               </div>
               
