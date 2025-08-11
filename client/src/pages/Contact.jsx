@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Container, Row, Col, Form, Button, Alert } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faPhone, faEnvelope, faGlobe, faMobileAlt } from "@fortawesome/free-solid-svg-icons";
+import { faUser, faPhone, faEnvelope, faGlobe} from "@fortawesome/free-solid-svg-icons";
 import { motion } from "framer-motion";
 import "../styles/Contact.css";
 
@@ -97,19 +97,19 @@ const Contact = () => {
               <ul className="list-unstyled">
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faUser} className="me-2 icon-muted" />
-                  <span><strong>Name:</strong> FRG Logistics</span>
+                  <span> FRG Logistics Inc.</span>
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faPhone} className="me-2 icon-muted" />
-                  <span><strong>Main:</strong> +1 (123) 456-7890</span>
+                  <span> +1 (647) 286-6834</span>
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
-                  <FontAwesomeIcon icon={faMobileAlt} className="me-2 icon-muted" />
-                  <span><strong>Mobile:</strong> +1 (987) 654-3210</span>
+                  <FontAwesomeIcon icon={faPhone} className="me-2 icon-muted" />
+                  <span> +1 (438) 308-1520</span>
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faEnvelope} className="me-2 icon-muted" />
-                  <span><strong>Email:</strong> contact@frglogistics.ca</span>
+                  <span> info@frglogistics.ca</span>
                 </li>
                 {/* <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faGlobe} className="me-2 icon-muted" />
