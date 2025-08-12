@@ -4,16 +4,18 @@ import "../../styles/WhyChoose.css";  // Custom styles
 
 // Feature card images
 // import ecoFriendlyImg from "../../assets/EcoFriendly2.jpg";
-import ecoFriendlyImg from "../../assets/FRGEcoFriendly4.png";
-import costEfficiencyImg from "../../assets/CostEfficiency.jpg";
+import ecoFriendlyImg from "../../assets/FRGEcoFriendly9..png";
+// import costEfficiencyImg from "../../assets/CostEfficiency.jpg";
+import costEfficiencyImg from "../../assets/CostEfficiency2.png";
 // import reliabilityImg from "../../assets/Reliability.jpg";
-import reliabilityImg from "../../assets/FRGReliability2.png";
-import gpsTrackingImg from "../../assets/GPSTracking.jpg";
+import reliabilityImg from "../../assets/FRGReliability3.png";
+// import gpsTrackingImg from "../../assets/GPSTracking.jpg";
+import gpsTrackingImg from "../../assets/GPSTracking1.png";
 // import scalabilityImg from "../../assets/Scalability.jpg";
-import scalabilityImg from "../../assets/scalability3.png";
+import scalabilityImg from "../../assets/scalability4.png";
 // import driversImg from "../../assets/ProfessionalDrivers.jpg";
-import driversImg from "../../assets/FRGProfessionalDrivers.png";
-import phoneMockup from "../../assets/phone.png";
+import driversImg from "../../assets/FRGProfessionalDrivers2.png";
+import phoneMockup from "../../assets/phone1.png";
 import { motion } from "framer-motion";
 
 // Cards with hoverable titles and descriptions
