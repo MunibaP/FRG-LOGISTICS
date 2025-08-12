@@ -7,9 +7,12 @@ import CountUp from "react-countup";
 // import cargoBike from "../assets/cargoTruck.jpg";
 // import electricTruck from "../assets/electricTruck.jpg";
 
-import evTesla  from "../assets/evCar1.jpg";
-import evVolkswagen from "../assets/evCar2.jpg";
-import evMitsubishi  from "../assets/evCar3.jpg";
+// import evTesla  from "../assets/evCar1.jpg";
+// import evVolkswagen from "../assets/evCar2.jpg";
+// import evMitsubishi  from "../assets/evCar3.jpg";
+import evCar1 from "../assets/evCar1.png";
+import evCar2  from "../assets/evCar5.png";
+import evCar3  from "../assets/evCar4.png";
 
 import fleetBg from "../assets/map.png";
 
@@ -17,8 +20,8 @@ import "../styles/Fleet.css";
 
 const fleetData = [
   {
-    img: evTesla,
-    name: " Tesla Model X",
+    img: evCar1,
+    name: " Tesla Model X, Volkswagen ID.4",
     specs: 
     [
       "Range: 348 miles",
@@ -27,23 +30,23 @@ const fleetData = [
     ],
   },
   {
-    img: evVolkswagen,
-    name: "Volkswagen ID.4",
-    specs: 
-    [
-      "Range: 275 miles", 
-      "Cargo Capacity: 64.2 cu ft (with seats down)", 
-      "Eco-Friendly: 100% Electric – Zero Emissions"
-    ],
-  },
-  {
-    img: evMitsubishi,
-    name: "Mitsubishi Outlander PHEV",
+    img: evCar3,
+    name: "Kia EV9, Volvo EX90",
     specs: 
     [
       "Range: 38 miles (EV only) / 420+ miles total (hybrid)", 
       "Cargo Capacity: 64.7 cu ft",
       "Eco-Friendly: Plug-in Hybrid – Low Emissions"
+    ],
+  },
+  {
+    img: evCar2,
+    name: "Mercedes-Benz EQB SUV, Mitsubishi Outlander PHEV",
+    specs: 
+    [
+      "Range: 275 miles", 
+      "Cargo Capacity: 64.2 cu ft (with seats down)", 
+      "Eco-Friendly: 100% Electric – Zero Emissions"
     ],
   },
 ];
@@ -129,11 +132,13 @@ const OurFleet = () => {
                     <Card.Img variant="top" src={img} alt={name} />
                     <Card.Body>
                       <Card.Title className="text-success">{name}</Card.Title>
-                      <ul className="list-unstyled fs-6">
-                        {specs.map((spec, idx) => (
-                          <li key={idx}>{spec}</li>
-                        ))}
-                      </ul>
+                      {false && (
+                        <ul className="list-unstyled fs-6">
+                          {specs.map((spec, idx) => (
+                            <li key={idx}>{spec}</li>
+                          ))}
+                        </ul>
+                      )}
                     </Card.Body>
                   </Card>
                 </motion.div>
