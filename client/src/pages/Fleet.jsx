@@ -11,8 +11,8 @@ import CountUp from "react-countup";
 // import evVolkswagen from "../assets/evCar2.jpg";
 // import evMitsubishi  from "../assets/evCar3.jpg";
 import evCar1 from "../assets/evCar1.png";
-import evCar2  from "../assets/evCar5.png";
-import evCar3  from "../assets/evCar4.png";
+import evCar2  from "../assets/evCar6.png";
+import evCar3  from "../assets/evCar7.png";
 
 import fleetBg from "../assets/map.png";
 
@@ -31,7 +31,7 @@ const fleetData = [
   },
   {
     img: evCar3,
-    name: "Kia EV9, Volvo EX90",
+    name: "Chevrolet Bolt EV, Hyundai Kona Electric",
     specs: 
     [
       "Range: 38 miles (EV only) / 420+ miles total (hybrid)", 
@@ -41,7 +41,7 @@ const fleetData = [
   },
   {
     img: evCar2,
-    name: "Mercedes-Benz EQB SUV, Mitsubishi Outlander PHEV",
+    name: "Nissan Leaf, Mercedes eSprinter",
     specs: 
     [
       "Range: 275 miles", 
