@@ -31,7 +31,7 @@ export default function TrackSplit() {
     setLoading(true);                                     // Start Loading
     
     try {
-      const res = await fetch(`/api/track/${trackingId.trim()}`);  // API call to backend
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/track/${trackingId.trim()}`);  // API call to backend
       if (!res.ok) {
         const data = await res.json();
         throw new Error(data.error || "Tracking failed");          // Throw error if not OK

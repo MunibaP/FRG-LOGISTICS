@@ -36,7 +36,7 @@ const Quote = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('/api/quote', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/quote`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
