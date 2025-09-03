@@ -19,7 +19,8 @@
     "dotenv": "^17.2.1",
     "express": "^4.21.2",
     "express-validator": "^7.2.1",
-    "mongoose": "^8.16.5"
+    "mongoose": "^8.16.5",
+    "sitemap": "^8.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
