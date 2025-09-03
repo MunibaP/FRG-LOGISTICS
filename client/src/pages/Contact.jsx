@@ -109,7 +109,7 @@ const Contact = () => {
                 </li>
                 <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faEnvelope} className="me-2 icon-muted" />
-                  <span> info@frglogistics.ca</span>
+                  <span> info@frglogistics.com</span>
                 </li>
                 {/* <li className="mb-3 d-flex align-items-center text-muted">
                   <FontAwesomeIcon icon={faGlobe} className="me-2 icon-muted" />

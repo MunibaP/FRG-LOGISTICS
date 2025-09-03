@@ -10,9 +10,13 @@ import CountUp from "react-countup";
 // import evTesla  from "../assets/evCar1.jpg";
 // import evVolkswagen from "../assets/evCar2.jpg";
 // import evMitsubishi  from "../assets/evCar3.jpg";
-import evCar1 from "../assets/evCar1.png";
-import evCar2  from "../assets/evCar6.png";
-import evCar3  from "../assets/evCar7.png";
+// import evCar1 from "../assets/evCar1.png";
+// import evCar2  from "../assets/evCar6.png";
+// import evCar3  from "../assets/evCar7.png";
+
+import evCar1 from "../assets/ElectricCar1.png";
+import evCar2 from "../assets/ElectricCar2.png";
+import evCar3 from "../assets/ElectricCar3 copy.png";
 
 import fleetBg from "../assets/map.png";
 
@@ -21,7 +25,7 @@ import "../styles/Fleet.css";
 const fleetData = [
   {
     img: evCar1,
-    name: " Tesla Model X, Volkswagen ID.4",
+    name: " Chevrolet Blazer SS EV, Tesla Model Y",
     specs: 
     [
       "Range: 348 miles",
@@ -31,7 +35,7 @@ const fleetData = [
   },
   {
     img: evCar3,
-    name: "Chevrolet Bolt EV, Hyundai Kona Electric",
+    name: "Ford F150 EV, Mercedes eSprinter",
     specs: 
     [
       "Range: 38 miles (EV only) / 420+ miles total (hybrid)", 
@@ -41,7 +45,7 @@ const fleetData = [
   },
   {
     img: evCar2,
-    name: "Nissan Leaf, Mercedes eSprinter",
+    name: "Ford Mustang mach-e, Hyundai Kona EV",
     specs: 
     [
       "Range: 275 miles", 

@@ -55,7 +55,7 @@ const ContactSection = () => {
                   <span className="icon-wrapper">
                     <FontAwesomeIcon icon={faEnvelope} className="text-success fa-fw" />
                   </span>
-                  <span>info@frglogistics.ca</span>
+                  <span>info@frglogistics.com</span>
                 </div>
               </div>
               

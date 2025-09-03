@@ -89,7 +89,7 @@ const Footer = () => {
             <p className="footer-contact">
               <FontAwesomeIcon icon={faEnvelope} className="icon" />
               <a href="mailto:info@frglogistics.ca" className="footer-link">
-                info@frglogistics.ca
+                info@frglogistics.com
               </a>
             </p>
             <p className="footer-contact">
@@ -111,7 +111,7 @@ const Footer = () => {
             {/* Social media icon links */}
             <div className="footer-socials">
               <a
-                href="https://www.facebook.com/login.php/"
+                href=" https://www.facebook.com/profile.php?id=61579808230132"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Facebook"
@@ -120,7 +120,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faFacebookF} />
               </a>
               <a
-                href="https://www.linkedin.com/login"
+                href="https://www.linkedin.com/in/frglogisticsinc/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="LinkedIn"
@@ -129,7 +129,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faLinkedinIn} />
               </a>
               <a
-                href="https://x.com/i/flow/login"
+                href="https://x.com/FRG_logistics"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Twitter"
@@ -138,7 +138,7 @@ const Footer = () => {
                 <FontAwesomeIcon icon={faXTwitter} />
               </a>
               <a
-                href="https://www.instagram.com/accounts/emailsignup/"
+                href="https://www.instagram.com/frg_logistics/"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"

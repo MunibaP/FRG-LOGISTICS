@@ -103,7 +103,7 @@ const Retail = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.6 }}
                 transition={{ duration: 0.6, delay: i * 0.3 }}
-                whileHover={{ scale: 1.05, boxShadow: "0 0 15px #198754" }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 15px #198754",  transition: { duration: 0.15, ease: "easeInOut" }  }}
               >
                 {/* Feature icon */}
                 <FontAwesomeIcon
