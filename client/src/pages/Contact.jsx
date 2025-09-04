@@ -15,6 +15,8 @@ const containerVariants = {
 };
 
 const Contact = () => {
+  console.log("API URL:", import.meta.env.VITE_API_URL);
+
   // Local state for form inputs and feedback
    const [formData, setFormData] = useState({
     name: "",
@@ -43,7 +45,7 @@ const Contact = () => {
       //   headers: { "Content-Type": "application/json" },
       //   body: JSON.stringify(formData),
       // });
-      
+
       const apiUrl = import.meta.env.VITE_API_URL; // Get the API URL from .env
 
       const response = await fetch(`${apiUrl}/contact`, {
