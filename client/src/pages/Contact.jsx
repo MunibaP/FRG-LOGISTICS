@@ -15,6 +15,9 @@ const containerVariants = {
 };
 
 const Contact = () => {
+  console.log("VITE_API_URL:", import.meta.env.VITE_API_URL);
+
+
   // Local state for form inputs and feedback
    const [formData, setFormData] = useState({
     name: "",
