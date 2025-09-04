@@ -17,14 +17,14 @@ const corsOptions = {
 app.use(cors(corsOptions)); // Enable Cross-Origin Resource Sharing (CORS)
 app.use(express.json()); // Middleware to parse JSON request bodies
 
-// Serve static files from React frontend build directory
-app.use(express.static(path.join(__dirname, '../client/dist')));
-
 // Import and mount API routes under /api
 const routes = require('./routes'); // import routes
 app.use('/api', routes);
 // const formRoutes = require('./routes/forms');
 // app.use('/api', formRoutes);
+
+// Serve static files from React frontend build directory
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
 // Fallback: For any other routes, serve React's index.html (for client-side routing)
 app.get('*', (req, res) => {
