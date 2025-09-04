@@ -7,6 +7,8 @@ const path = require('path');
 
 const app = express();
 
+app.set('trust proxy', true);
+
 // CORS configuration
 const corsOptions = {
   origin: ["https://frglogistics.com", "https://www.frglogistics.com", "http://localhost:5173"], // frontend domains
