@@ -31,7 +31,7 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  //  Handle form submit
+  //  Handles form submit
   const handleSubmit = async (e) => {
     e.preventDefault();
     setSubmitted(false);
