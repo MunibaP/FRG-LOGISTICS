@@ -9,12 +9,17 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: ["https://frglogistics.com", "https://www.frglogistics.com"], // frontend domains
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: ["https://frglogistics.com", "https://www.frglogistics.com", "http://localhost:5173"], // frontend domains
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 };
 
 app.use(cors(corsOptions)); // Enable Cross-Origin Resource Sharing (CORS)
+
+// Explicitly handle preflight OPTIONS requests for all routes
+app.options('*', cors(corsOptions));
+
 app.use(express.json()); // Middleware to parse JSON request bodies
 
 // Import and mount API routes under /api
