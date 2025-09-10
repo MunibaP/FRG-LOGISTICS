@@ -4,7 +4,7 @@
 
   # **FRG Logistics – Official Website**
 
-  ### *Efficient. Reliable. Green.*
+  ### *Fast. Reliable. Green.*
 
    <p>
     <img src="https://img.shields.io/badge/Frontend-React%20(Vite)-61DBFB?logo=react" alt="React"/>
@@ -29,7 +29,7 @@
 - [License](#license)
 
 ## Description
-The **FRG Logistics Official Website** is a modern, eco-friendly delivery platform built to provide **efficient, reliable, and sustainable logistics services** across the Greater Toronto Area.  
+The **FRG Logistics Official Website** is a modern, eco-friendly delivery platform built to provide **fast, reliable, and sustainable logistics services** across the Greater Toronto Area.  
 
 The website showcases the company’s services, fleet, and sustainability efforts while allowing users to:  
 - Learn about FRG’s logistics solutions.  
@@ -133,6 +133,7 @@ This project is **proprietary** and was developed for **FRG Logistics** as their
 - All rights reserved © 2025 FRG Logistics & Muniba Pervez.
   
   ![License](https://img.shields.io/badge/license-Proprietary-red)
+
 
 
 
