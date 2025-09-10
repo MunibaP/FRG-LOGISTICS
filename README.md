@@ -56,7 +56,7 @@ This project emphasizes **professional branding, interactivity, and scalability*
 | Technology                      | Purpose & Implementation                                                                                                                          |
 | ------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **React (Vite)**                | Frontend framework for building fast, modern, and modular UI components. Vite was used as the bundler for quick development and optimized builds. |
-| **Express.js**                  | Backend framework used to handle form submissions (`/contact`, `/quote`) and provide secure API endpoints.                                        |
+| **Express.js**                  | Backend framework used to handle form submissions (`/contact`, `/quote`, `/track`) and provide secure API endpoints.                                        |
 | **MongoDB**                     | NoSQL database for storing quote requests, contact form data, and tracking information.                                                           |
 | **Bootstrap + React-Bootstrap** | UI framework for responsive grid layout, styled components, and mobile-first design.                                                              |
 | **Font Awesome**                | Used for scalable vector icons across navigation, services, and feature sections.                                                                 |
@@ -102,6 +102,7 @@ This project was built as the official company website for **FRG Logistics**.
 It is intended for demonstration and portfolio purposes only — **not for public reuse**.
 
 ## Screenshot
+<img src="./assets/FRG-LOGISTICS-HomePage.jpeg" alt="FRG Logistics Homepage" width="600" />
 
 ## Contributions
 This project was developed as a commissioned website for **FRG Logistics**.  
@@ -125,13 +126,14 @@ Developed by **Muniba Pervez**
 - 📧 Email: [munibapervez596@gmail.com]  
 
 ## License
-This project is **proprietary** and was developed as a commissioned website for **FRG Logistics**.  
+This project is **proprietary** and was developed for **FRG Logistics** as their official website.  
 
 - Source code and design are provided here **for portfolio and demonstration purposes only**.  
 - Commercial use, redistribution, or modification without prior authorization is **strictly prohibited**.  
 - All rights reserved © 2025 FRG Logistics & Muniba Pervez.
   
   ![License](https://img.shields.io/badge/license-Proprietary-red)
+
 
 
 
